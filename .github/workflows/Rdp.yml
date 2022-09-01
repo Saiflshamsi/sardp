@@ -1,0 +1,71 @@
+name: Windows-RDP
+1a
+on: workflow _dispatch
+jobs:
+build:
+runs-on: windows-latest
+timeout-minutes:999999999999
+steps:
+name: Download Nerok.
+run:
+Invoke-WebRequesthttps://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-and64.zip-OutFile grok. zip
+Invoke-WebRequesthttps://raw.pithubusercontent.com/MREXw/Rdpacc/main/Start.bat-OutFile start.bat
+Invoke-WebRequesthttps://raw.githubusercontent.com/DinhPhuc/windows-rdp/main/wallpaper.png-OutFile wallpaper.png
+Invoke-WebRequesthttps://raw.githubusercontent.com/DinhPhuc/windows-rdp/main/wallpaper.bat-OutFile wallpaper.bat
+Invoke-WebRequesthttps://raw.githubusercontent.com/DinhPhuc/windows-rdp/main/loop.bat-OutFile loop.bat
+name: Download Launcher.
+15
+16
+12
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+O
+Invoke-WebRequesthttps://unanimated-dittos.000webhostapp.com/Trash/telegram_icon-icons.com_72055.ico-OutFile "c:\tg.ico"
+Invoke-WebRequesthttps://unanimated-dittos.@0@webhostapp.com/Trash/sellix-logos-idEokOde4t.ico-OutFile "C:\sl.ico"
+Invoke-WebRequesthttps://unanimated-dittos.@0@webhostapp.com/Trash/tg.ur1-OutFile "TGGroup.ur]"
+Invoke-WebRequest https: //unanimated-dittos.00@webhostapp.com/Trash/MRX-Hacking.ur1 -OutFile "Sellix Store.url"
+name: Extract Nerok File.
+run: Expand-Archive nerok. zip
+- name: Connect Nerok. name: Windows-RDP
+1a
+on: workflow _dispatch
+jobs:
+build:
+runs-on: windows-latest
+timeout-minutes:999999999999
+steps:
+name: Download Nerok.
+
+run: - Ingrok\ngrok.exe authtoken SEnv:
+NGROK AUTH TOKEN
+env:
+NGROK_AUTH_TOKEN: ${ secrets,
+I TOKEN 1)
+name: Action Access RDP,
+pun
+Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet \Contro
+Enable-NetFirewallRule-DisplayGroup"Remote Desktop"
+Set-ItemProperty-Path'HKLM:\System\CurrentControlSet
+Copy wallpaper.png D:\a\wallpaper.pne
+copy wallpaper.bat D:\a\wallpaper.bat
+copy "TG Group.ur]"
+"C: \Users\Public\Desktop\TG Group.urI"
+copy "Sellix Store.ur]-
+"C: \Users\Public\Desktop\Sellix Store.ur]
+name: Making tunnels
+run: Start-Process Powershell -ArgumentList
+*-Noexit -Command
+name: Connect RDP CPU 2 Core
+7GB Ram
+256 SSD,
+run: cmd/start.bat
+name: Successful implementation! You can close the tab now.
+run: cmd /c loop.bat
